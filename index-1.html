@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Weather</h1>
+      </div>
+    </div>
+    <div class="main-content">
+      <section class="form-box">
+        <form id="searchForm">
+          <div class="InputBox">
+            <input
+              id="cityInput"
+              type="text"
+              required
+              placeholder="Enter your city"
+            />
+            <button type="submit">🔍</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div id="weather">
+      <p>Loading weather 🌤️...</p>
+    </div>
+
+    <div class="week" id="weekForecast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
